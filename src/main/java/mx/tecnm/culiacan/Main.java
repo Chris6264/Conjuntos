@@ -14,20 +14,18 @@ public class Main {
         Set<Integer> conjuntoA = primerConjunto.getConjunto();
         Set<Integer> conjuntoB = segundoConjunto.getConjunto();
 
-        FormateadorConjuntos formateadorConjuntos = new FormateadorConjuntos();
-
         System.out.println("Primer conjunto: " + primerConjunto + ", Segundo Conjunto: " + segundoConjunto);
         System.out.println("Esta vacio: " + primerConjunto.isEmpty());
         System.out.println("Contiene elemento : " + primerConjunto.contains(5));
         System.out.println("Es SubConjunto: " + primerConjunto.subSet(conjuntoB));
         System.out.println("Es SubConjunto Propio: " + primerConjunto.subSetP(conjuntoB));
-        System.out.println("Union: " + formateadorConjuntos.formatearConjunto(primerConjunto.union(conjuntoB)));
-        System.out.println("Interseccion: " + formateadorConjuntos.formatearConjunto(primerConjunto.intersection(conjuntoB)));
-        System.out.println("Diferencia: " + formateadorConjuntos.formatearConjunto(primerConjunto.difference(conjuntoB)));
-        System.out.println("Complemento: " + formateadorConjuntos.formatearConjunto(primerConjunto.complement()));
-        System.out.println("Clonacion: " + formateadorConjuntos.formatearConjunto(primerConjunto.cloneConjunto()));
+        System.out.println("Union: " + FormateadorConjuntos.formatearConjunto(primerConjunto.union(conjuntoB)));
+        System.out.println("Interseccion: " + FormateadorConjuntos.formatearConjunto(primerConjunto.intersection(conjuntoB)));
+        System.out.println("Diferencia: " + FormateadorConjuntos.formatearConjunto(primerConjunto.difference(conjuntoB)));
+        System.out.println("Complemento: " + FormateadorConjuntos.formatearConjunto(primerConjunto.complement()));
+        System.out.println("Clonacion: " + FormateadorConjuntos.formatearConjunto(primerConjunto.cloneConjunto()));
         System.out.println("Son iguales: " + primerConjunto.equals(segundoConjunto));
-        System.out.println("Producto Cartesiano: " + formateadorConjuntos.formatearConjuntoProductoCartesiano(primerConjunto.productC(conjuntoB)));
-        System.out.println("Conjunto Potencia: " + formateadorConjuntos.formatearConjuntoPotencia(primerConjunto.pow()));
+        System.out.println("Producto Cartesiano: " + FormateadorConjuntos.formatearConjuntoProductoCartesiano(primerConjunto.productC(conjuntoB)));
+        System.out.println("Conjunto Potencia: " + FormateadorConjuntos.formatearConjuntoPotencia(primerConjunto.pow()));
     }
 }

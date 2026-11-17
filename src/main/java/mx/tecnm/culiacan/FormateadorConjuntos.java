@@ -11,7 +11,7 @@ public class FormateadorConjuntos {
      * @return Cadena con los elementos entre llaves o el símbolo
      * de conjunto vacío cuando no contiene elementos.
      */
-    public String formatearConjunto(Set<Integer> conjunto) {
+    public static String formatearConjunto(Set<Integer> conjunto) {
         String cadenaConjunto = conjunto.toString();
         StringBuilder stringBuilder = new StringBuilder();
 
@@ -30,7 +30,7 @@ public class FormateadorConjuntos {
      * @param conjuntoCartesiano Conjunto de pares ordenados que se desea formatear.
      * @return Representación textual del producto cartesiano.
      */
-    public String formatearConjuntoProductoCartesiano(Set<ParConjuntos> conjuntoCartesiano) {
+    public static String formatearConjuntoProductoCartesiano(Set<ParConjuntos> conjuntoCartesiano) {
         StringBuilder stringBuilder = new StringBuilder();
 
         if (conjuntoCartesiano.isEmpty()) stringBuilder.append("∅");
@@ -51,7 +51,7 @@ public class FormateadorConjuntos {
      * @param conjuntoPotencia Conjunto potencia que se desea formatear.
      * @return Representación textual de todos los subconjuntos.
      */
-    public String formatearConjuntoPotencia(Set<Set<Integer>> conjuntoPotencia) {
+    public static String formatearConjuntoPotencia(Set<Set<Integer>> conjuntoPotencia) {
         StringBuilder stringBuilder = new StringBuilder();
 
         if (conjuntoPotencia.isEmpty()) stringBuilder.append("∅");
